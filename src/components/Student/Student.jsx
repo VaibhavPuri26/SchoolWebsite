@@ -13,7 +13,7 @@ import "./student.css";
 const Student = () => {
   return (
     <div className="student-section" id="student">
-      <Typography variant="h4" className="student-title">
+      <Typography variant="h3" className="student-title">
         Student Life at Springdale
       </Typography>
 

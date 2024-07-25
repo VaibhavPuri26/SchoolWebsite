@@ -5,7 +5,6 @@
   position: relative;
   color: #fff;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -20,29 +19,35 @@
 }
 
 .hero-content {
-  text-align: center;
-  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   z-index: 2;
 }
 
-.hero-content h1 {
+.hero-text {
+  text-align: left;
+  max-width: 45%;
+  margin-left: 2%;
+}
+
+.hero-text h1 {
   font-size: 60px;
   font-weight: 700;
   margin-bottom: 20px;
   line-height: 1.2;
 }
 
-.hero-content p {
+.hero-text p {
   max-width: 700px;
-  margin: 0 auto 30px;
+  margin: 0 0 30px;
   font-size: 18px;
   line-height: 1.6;
 }
 
 .hero-buttons {
   display: flex;
-  justify-content: center;
-  gap: 15px; /* Add space between buttons */
+  gap: 15px;
 }
 
 .btn-hero {
@@ -67,13 +72,55 @@
   margin-left: 8px;
 }
 
+.hero-carousel {
+  width: 45%;
+  margin-right: 2%;
+  margin-left: 15%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-slide {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.carousel-slide img {
+  width: 80%;
+  height: auto;
+  border-radius: 15px; 
+  max-height: 300px; 
+  object-fit: cover; 
+}
+
+.carousel-slide:first-child {
+  display: block;
+}
+
 @media (max-width: 840px) {
-  .hero-content h1 {
+  .hero-text h1 {
     font-size: 40px;
   }
 
-  .hero-content p {
+  .hero-text p {
     font-size: 16px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    margin: 0 auto 20px;
+  }
+
+  .hero-carousel {
+    width: 90%; 
+    margin: 20px auto 0;
   }
 }
 
@@ -81,5 +128,9 @@
   .btn-hero {
     padding: 10px 20px;
     font-size: 14px;
+  }
+
+  .hero-carousel {
+    width: 100%; 
   }
 }

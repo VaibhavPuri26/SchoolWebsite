@@ -132,18 +132,63 @@
   border-radius: 4px;
   border: 1px solid #ddd;
 }
+.download-button, .submit-button {
+  display: block; /* Make buttons appear on separate lines */
+  margin: 10px auto; /* Center buttons and add vertical spacing */
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #007bff; /* Primary blue color for buttons */
+  border: 2px solid #007bff;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.download-button {
+  background-color: #0056b3; /* Darker blue for download button */
+  border-color: #0056b3;
+}
+
+.download-button:hover {
+  background-color: #004494; /* Even darker blue on hover */
+  border-color: #004494;
+}
+
+.download-button:active {
+  background-color: #003d7a; /* Even darker shade for active effect */
+  border-color: #003d7a;
+}
 
 .submit-button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-  align-self: flex-start;
+  background-color: #007bff; /* Primary blue for submit button */
+  border-color: #007bff;
 }
 
 .submit-button:hover {
-  background-color: #0056b3;
+  background-color: #0056b3; /* Darker blue on hover */
+  border-color: #0056b3;
+}
+
+.submit-button:active {
+  background-color: #004494; /* Even darker shade for active effect */
+  border-color: #004494;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close-button:hover {
+  color: #ff0000;
 }
