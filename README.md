@@ -1,5 +1,6 @@
 It is a school frontend website made using react 
 You need to clone the repository and for it to setup you just have to install the packages by running npm install in your terminal.
+use npm run dev in your terminal after this
 This will run the website in your computer at local host
 You can also see the deployed link:
 https://school-website-ruby.vercel.app/
