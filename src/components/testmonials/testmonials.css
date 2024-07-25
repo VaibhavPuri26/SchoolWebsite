@@ -1,0 +1,94 @@
+.testmonials {
+  margin: 80px auto;
+  padding-inline: 80px;
+  position: relative;
+}
+
+.next-btn,
+.prev-btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 50px;
+  background-color: #212ea0;
+  color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.slider {
+  overflow: hidden;
+}
+
+.slider ul {
+  display: flex;
+  list-style-type: none;
+  width: 200%;
+  overflow-x: hidden;
+  transition: 0.4s;
+}
+
+.slider ul li {
+  width: none;
+  width: 50%;
+  padding: 20px;
+}
+
+.slide {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  padding: 40px 40px 60px; /* Increase bottom padding */
+  border-radius: 10px;
+  color: #676767;
+  line-height: 1.4;
+  height: 250px; /* Fixed height */
+  background-color: #e6e6fa; /* Light purple background */
+}
+
+.slide img {
+  width: 85px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 4px solid #212ea0;
+  margin-bottom: 10px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.user-info h3 {
+  color: #212ea0;
+}
+
+.slide p {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 800px) {
+  .testmonials {
+    padding-inline: 40px;
+  }
+  .next-btn,
+  .prev-btn {
+    padding: 10px;
+  }
+  .testmonials ul li {
+    padding: 10px;
+  }
+  .slide {
+    padding: 10px 10px 30px; /* Adjusted bottom padding for smaller screens */
+    height: 300px;
+  }
+}
